@@ -12,7 +12,7 @@ build:
   verbosity: minimal
 
 after_build:
-  - 7z a MAS345_GUI-v%APPVEYOR_BUILD_VERSION%.zip %APPVEYOR_BUILD_FOLDER%\\windowswitcher.app\bin\Release\*.*
+  - 7z a MAS345_GUI-v%APPVEYOR_BUILD_VERSION%.zip %APPVEYOR_BUILD_FOLDER%\MAS345_GUI\bin\Release\*.*
 
 artifacts:
   - path: MAS345_GUI-v$(appveyor_build_version).zip
